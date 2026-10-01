@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI STARTUP BUILDER - Transform Ideas into Investor-Ready Startups</title>
+    <meta name="description" content="AI Startup Builder coordinates 24 specialized AI agents to generate complete business, technical, financial, and investor blueprints." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"></noscript>
+  </head>
+  <body class="h-full bg-background text-body font-sans antialiased selection:bg-primary-light selection:text-primary">
+      <style>
+        .initial-loader {
+          position: fixed;
+          top: 0; left: 0; right: 0; bottom: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #F9FBFF;
+          z-index: 99999;
+          font-family: system-ui, -apple-system, sans-serif;
+          padding: 2rem;
+        }
+        .loader-heading {
+          font-size: 3rem;
+          font-weight: 900;
+          font-family: 'Space Grotesk', sans-serif;
+          letter-spacing: -0.025em;
+          line-height: 1.1;
+          margin-bottom: 2rem;
+          text-align: center;
+          color: #1f2937;
+        }
+        .text-gradient-orange {
+          color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          background-image: linear-gradient(to right, #fb923c, #ef4444);
+        }
+        .text-gradient-blue {
+          color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          background-image: linear-gradient(to right, #3b82f6, #a855f7);
+        }
+        .spinner {
+          width: 40px; height: 40px;
+          border: 3px solid rgba(0, 0, 0, 0.1);
+          border-radius: 50%;
+          border-top-color: #ea580c;
+          animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @media (prefers-color-scheme: dark) {
+          .initial-loader { background-color: #09090b; }
+          .loader-heading { color: #f9fafb; }
+          .spinner { border: 3px solid rgba(255, 255, 255, 0.1); border-top-color: #ea580c; }
+        }
+      </style>
+    <div id="app-shell" class="initial-loader">
+      <h1 class="loader-heading">
+        Transform Startup<br>Ideas into<br>
+        <span class="text-gradient-orange">Investor-Ready</span><br>
+        <span class="text-gradient-blue">Blueprints</span>
+      </h1>
+      <div class="spinner"></div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

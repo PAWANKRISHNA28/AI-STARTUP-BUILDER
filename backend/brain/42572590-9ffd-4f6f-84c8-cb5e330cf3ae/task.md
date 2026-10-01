@@ -1,0 +1,2 @@
+- `[x]` Create `backend/app/api/ai_routes.py` API endpoint
+- `[x]` Hook up the AI router in `backend/main.py`
