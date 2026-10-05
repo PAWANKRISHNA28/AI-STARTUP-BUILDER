@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 T = TypeVar("T", bound=BaseModel)
 
 class BaseAgent:
-    def __init__(self, name: str, model_name: str = "gemini-2.5-flash"):
+    def __init__(self, name: str, model_name: str = "gemini-3.8-flash"):
         self.name = name
         self.model_name = model_name
         

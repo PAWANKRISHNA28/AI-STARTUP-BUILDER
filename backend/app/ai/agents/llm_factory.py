@@ -10,7 +10,7 @@ def get_llm(temperature=0.7, require_structured_output=False, structured_schema=
     # Prefer Gemini if both keys are available
     if settings.GEMINI_API_KEY:
         llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-pro", # You can adjust this to gemini-1.5-flash as well
+            model="gemini-3.8-flash", # You can adjust this to gemini-1.5-flash as well
             api_key=settings.GEMINI_API_KEY,
             temperature=temperature
         )
